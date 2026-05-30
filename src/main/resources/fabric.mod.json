@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "portalnuhuh",
+	"version": "${version}",
+	"name": "PortalNuhUh",
+	"description": "Disable the nether or end portal with a simple gamerule",
+	"authors": [
+	{
+		"name": "blacklizardcode",
+		"contact": {
+			"homepage": "https://blacklizardco.de",
+			"sources": "https://github.com/blacklizardcode"
+        }
+    }
+	],
+	"contact": {
+		"issues": "https://github.com/blacklizardcode/portalnuhuh/issues",
+		"sources": "https://github.com/blacklizardcode/portalnuhuh"
+	},
+	"license": "CC BY-NC-SA 4.0 with Additional Terms - see LICENSE",
+	"icon": "assets/portalnuhuh/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"portalnuhuh.PortalNuhUh"
+		],
+		"client": [
+			"portalnuhuh.client.PortalNuhUhClient"
+		]
+	},
+	"mixins": [
+		"portalnuhuh.mixins.json",
+		{
+			"config": "portalnuhuh.client.mixins.json"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
