@@ -23,15 +23,13 @@
 	"entrypoints": {
 		"main": [
 			"portalnuhuh.PortalNuhUh"
-		],
-		"client": [
-			"portalnuhuh.client.PortalNuhUhClient"
 		]
 	},
 	"mixins": [
 		"portalnuhuh.mixins.json",
 		{
-			"config": "portalnuhuh.client.mixins.json"
+			"config": "portalnuhuh.client.mixins.json",
+			"environment": "server"
 		}
 	],
 	"depends": {
